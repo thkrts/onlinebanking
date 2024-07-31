@@ -1,0 +1,23 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light p-4">User Dashboard Menu</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="accountdetails">Account Details</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="accountsummary">Account Summary</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="accountstatement">Account Statement</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="changepassword">Change Password</a>
+            <button class="btn btn-toggle border-bottom d-inline-flex p-3 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                Fund Transfer
+              </button>
+              <div class="collapse border-bottom" id="account-collapse">
+                <ul type="solid" class="btn-toggle-nav fw-normal pb-1 p-3">
+                  <li><a routerLink="addpayee" class="link-dark d-inline-flex text-decoration-none ">Add Payee</a></li>
+                  <li><a routerLink="neft" class="link-dark d-inline-flex text-decoration-none ">NEFT</a></li>
+                  <li><a routerLink="rtgs" class="link-dark d-inline-flex text-decoration-none ">RTGS</a></li>
+                  <li><a routerLink="imps" class="link-dark d-inline-flex text-decoration-none ">IMPS</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>

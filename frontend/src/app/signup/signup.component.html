@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align:center;" class="text-center">
+    <main class="form-signin w-auto m-auto">
+        <form (ngSubmit)="formSubmit()">
+            <h1 class="h3 fw-normal">Register For Internet Banking</h1>
+
+            <div class="form-floating">
+                <input required [(ngModel)]="user.username" name="username" class="form-control"
+                    id="floatingInput" placeholder="Enter here">
+                    <label for="floatingInput">Enter Account No.</label>
+            </div>
+            <div class="form-floating">
+                <input required [(ngModel)]="user.password" name="password" type="password"
+                    class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Password</label>
+            </div>
+
+            <div class="form-floating">
+                <input required [(ngModel)]="user.confirmpassword" name="confirmpassword" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingInput">Confirm Login Password</label>
+            </div>
+            <div class="form-floating">
+                <input required [(ngModel)]="user.transpassword" name="transpassword"
+                    type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Set Transaction Password</label>
+            </div>
+            <div class="form-floating">
+                <input required [(ngModel)]="user.confirmtranspassword" name="confirmtranspassword"class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingInput">Confirm Transaction Password</label>
+            </div>
+            <br>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+            <br><br>
+            <button class="w-100 btn btn-lg btn-primary" type="reset">
+                Clear
+            </button>
+        </form>
+
+
+    </main>
+</body>
+
+</html>

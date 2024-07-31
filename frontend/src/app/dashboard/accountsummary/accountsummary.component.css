@@ -1,0 +1,52 @@
+.row.content {
+    height: 577.5px
+}
+
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .row.content {
+        height: auto;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/premium-vector/banking-business-banner-finance-savings-silhouette-city-background_48369-11851.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: 1600px 920px;
+
+}
+
+div {
+    border: solid;
+    padding: 10px;
+}
+
+h1 {
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+label {
+    width: 240px;
+    display: inline-block;
+    Text-align: left;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 12px;
+}

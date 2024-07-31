@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #fcf5cc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+
+            border: solid;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            border-style: solid;
+            padding-left: 10%;
+            padding-right: 10%;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #e5ff8f;
+            border-radius: 10px;
+        }
+
+        input {
+            background-color: #fcfff0;
+            border-radius: 5px;
+        }
+
+        label {
+
+            width: 240px;
+            display: inline-block;
+            Text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>INITIATE RTGS PAYMENT</h1>
+    <div>
+        <label for="facc">From Account:</label>
+        <input type="text" id="facc" name="facc"><br><br>
+        <label for="tacc">To Account:</label>
+        <input type="text" id="tacc" name="tacc"> <button class="btn btn-outline-dark" style="margin:15px;">Add New +</button>&nbsp; <br><br>
+
+
+        <label for="amm">Amount:</label>
+        <input type="Integer" Integer="amm" name="amm"><br><br>
+        <label for="tdate">Transaction Date:</label>
+        <input type="Integer" id="tdate" name="tdate"><br><br>
+        <label for="matinst">Maturity Instruction:</label>
+        <input type="text" id="mainst" name="mainst"><br><br>
+        <label for="rem">Remark:</label>
+        <input type="text" Integer="rem" name="rem"><br><br>
+
+        <button class="btn btn-outline-dark" style="margin:15px;">Save</button>&nbsp; <button class="btn btn-outline-dark" style="margin:15px;">Reset</button>&nbsp;<button
+        class="btn btn-outline-dark" style="margin:25px;">Save as Template</button> <a href=""> <button class="btn btn-outline-dark"
+                style="margin:15px;">Continue</button></a>&nbsp;
+    </div>
+
+</body>
+
+</html>

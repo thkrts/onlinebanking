@@ -1,0 +1,39 @@
+package controller;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import model.Registration;
+import services.RegistrationService;
+
+@RestController
+@RequestMapping("/registration")
+public class RegistrationController {
+	
+	private RegistrationService registrationService;
+
+	public RegistrationController(RegistrationService registrationService) {
+		this.registrationService = registrationService;
+	}
+	
+	@GetMapping
+	public ResponseEntity<List<Registration>> getAllCustomers(){
+		return ResponseEntity.ok(registrationService.getAllCustomers());
+	}
+	
+	@PostMapping
+	public ResponseEntity addCustomers(@RequestBody Registration customers) {
+        registrationService.addCustomers(customers);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+	
+	
+	
+}

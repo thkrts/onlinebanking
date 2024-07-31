@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://img.freepik.com/premium-vector/banking-business-banner-finance-savings-silhouette-city-background_48369-11851.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-size: 1600px 920px;
+}
+
+.row.content {
+  height: 745.5px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+
+
+}
+
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 200%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 12px;
+}
+
+tr:nth-child(even) {}
+
+
+.formargin {
+  margin-top: 5%;
+}

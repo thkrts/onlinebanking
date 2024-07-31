@@ -1,0 +1,135 @@
+<div class="container rounded bg-white mt-1 mb-5">
+        <form (ngSubmit)="formSubmit()" name="register">
+                <div class="row">
+                        <div class="col-md-5 border-right">
+                                <div class="p-3 py-5">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="text-right">Personal Details</h4>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="col-md-6"><label class="labels">Title</label><input
+                                                                [(ngModel)]="user.title" name="title" type="text"
+                                                                class="form-control" placeholder="Title" value=""></div>
+                                                <div class="col-md-6"><label class="labels">First Name</label><input
+                                                                 [(ngModel)]="user.firstname" name="firstname"
+                                                                type="text" class="form-control"
+                                                                placeholder="first name" value=""></div>
+                                                <div class="col-md-6"><label class="labels">Middle Name</label><input
+                                                                [(ngModel)]="user.middlename" name="middelname"
+                                                                type="text" class="form-control" value=""
+                                                                placeholder="Middle Name"></div>
+                                                <div class="col-md-6"><label class="labels">Last Name</label><input
+                                                                required [(ngModel)]="user.lastname" name="lastname"
+                                                                type="text" class="form-control" placeholder="Last name"
+                                                                value=""></div>
+                                                <div class="col-md-6"><label class="labels">Father Name</label><input
+                                                                required [(ngModel)]="user.fathername" name="fathername"
+                                                                type="text" class="form-control" placeholder="father name"
+                                                                value=""></div>
+                                                <div class="col-md-12"><label class="labels">Mobile Number</label><input
+                                                                required [(ngModel)]="user.mobno" name="mobno"
+                                                                type="text" class="form-control"
+                                                                placeholder="Enter phone number" value=""></div>
+                                                <div class="col-md-12"><label class="labels">Email ID</label><input
+                                                                required [(ngModel)]="user.eid" name="eid" type="text"
+                                                                class="form-control" placeholder="enter email id"
+                                                                value=""></div>
+                                                <div class="col-md-6"><label class="labels">Adhaar Card</label><input
+                                                                required [(ngModel)]="user.adhaar" name="adhaar"
+                                                                type="text" class="form-control" value=""
+                                                                placeholder="Adhaar No"></div>
+                                                <div class="col-md-6"><label class="labels">Date Of Birth</label><input
+                                                                [(ngModel)]="user.dob" name="dob" type="text"
+                                                                class="form-control" value="" placeholder="DOB"></div>
+
+                                        </div>
+                                        <br>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="text-right">Residential Address</h4>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="col-md-12"><label class="labels">Address Line
+                                                                1</label><input [(ngModel)]="user.ral1" name="ral1"
+                                                                type="text" class="form-control"
+                                                                placeholder="Enter address line 1" value=""></div>
+                                                <div class="col-md-12"><label class="labels">Address Line
+                                                                2</label><input [(ngModel)]="user.ral2" name="ral2"
+                                                                type="text" class="form-control"
+                                                                placeholder="Enter address line 2" value=""></div>
+                                                <div class="col-md-12"><label class="labels">Landmark</label><input
+                                                                [(ngModel)]="user.ralandmark" name="ralandmark"
+                                                                type="text" class="form-control" placeholder="Landmark"
+                                                                value=""></div>
+                                                <div class="col-md-12"><label class="labels">State</label><input
+                                                                [(ngModel)]="user.rastate" name="rastate" type="text"
+                                                                class="form-control" placeholder="State" value=""></div>
+                                                <div class="col-md-12"><label class="labels">City</label><input
+                                                                [(ngModel)]="user.racity" name="racity" type="text"
+                                                                class="form-control" placeholder="City" value=""></div>
+                                                <div class="col-md-12"><label class="labels">Pincode</label><input
+                                                                [(ngModel)]="user.rapin" name="rapin" type="text"
+                                                                class="form-control" placeholder="Pincode" value="">
+                                                </div>
+
+                                        </div>
+
+                                </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                                <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="text-right">Residential Address</h4>
+                                </div>
+                                <div class="row ">
+                                        <div class="col-md-12"><label class="labels">Address Line 1</label><input
+                                                        [(ngModel)]="user.pal1" name="pal1" type="text"
+                                                        class="form-control" placeholder="Enter address line 1"
+                                                        value=""></div>
+                                        <div class="col-md-12"><label class="labels">Address Line 2</label><input
+                                                        [(ngModel)]="user.pal2" name="pal2" type="text"
+                                                        class="form-control" placeholder="Enter address line 2"
+                                                        value=""></div>
+                                        <div class="col-md-12"><label class="labels">Landmark</label><input
+                                                        [(ngModel)]="user.palandmark" name="palandmark" type="text"
+                                                        class="form-control" placeholder="Landmark" value=""></div>
+                                        <div class="col-md-12"><label class="labels">State</label><input
+                                                        [(ngModel)]="user.pastate" name="pastate" type="text"
+                                                        class="form-control" placeholder="State" value=""></div>
+                                        <div class="col-md-12"><label class="labels">City</label><input
+                                                        [(ngModel)]="user.pacity" name="pacity" type="text"
+                                                        class="form-control" placeholder="City" value=""></div>
+                                        <div class="col-md-12"><label class="labels">Pincode</label><input
+                                                        [(ngModel)]="user.papin" name="papin" type="text"
+                                                        class="form-control" placeholder="Pincode" value=""></div>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <h4 class="text-right">Occupational Details</h4>
+                                </div>
+                                <div class="row ">
+                                        <div class="col-md-12"><label class="labels">Occupation Type</label><input
+                                                        [(ngModel)]="user.occtyp" name="occtyp" type="text"
+                                                        class="form-control" placeholder="Enter Occupation" value="">
+                                        </div>
+                                        <div class="col-md-12"><label class="labels">Source of Income</label><input
+                                                        [(ngModel)]="user.soi" name="soi" type="text"
+                                                        class="form-control" placeholder="Enter here" value=""></div>
+                                        <div class="col-md-12"><label class="labels">Gross Annual Income</label><input
+                                                        [(ngModel)]="user.gai" name="gai" type="text"
+                                                        class="form-control" placeholder="Enter Gross Income here"
+                                                        value=""></div>
+
+                                </div>
+                                <div class="mt-5 text-center">
+                                        <input type="checkbox" name="check" id="checkbox" value="1" required> I
+                                        Agree<br>
+                                        
+                                        <button class="btn btn-primary profile-button mt-2" type="submit">Apply</button>
+                                        <button class="btn btn-primary profile-button mt-2" type="reset">Reset</button>
+                                </div>
+                        </div>
+                </div>
+
+        </form>
+</div>
